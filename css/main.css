@@ -1,7 +1,25 @@
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* end global rules */
+
 h1 {
   color: rgb(112, 199, 130);
   text-align: center;
-  font-style: italic;
-  /* google fonts next session */
-  font-family: cursive;
+
+  /* google fonts link with the html*/
+  font-family: "Nosifer", sans-serif;
 }
+p {
+  text-align: center;
+}
+/* start landing section */
+.landing {
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+}
+/* end landing section */
