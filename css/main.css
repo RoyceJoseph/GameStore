@@ -3,8 +3,60 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
 }
 /* end global rules */
+
+header {
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .navbar {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  min-width: 200px;
+}
+
+header nav li {
+  display: inline-block;
+  font-size: 28px;
+}
+
+header nav li a {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: rgb(24, 52, 75);
+  transition: 2s;
+}
+
+header nav li a:hover {
+  padding-right: 40px;
+  background-color: aqua;
+}
+
+header .cart {
+  color: rgb(102, 102, 229);
+}
 
 h1 {
   color: rgb(112, 199, 130);
@@ -15,6 +67,7 @@ h1 {
 }
 p {
   text-align: center;
+  color: aqua;
 }
 /* start landing section */
 .landing {
