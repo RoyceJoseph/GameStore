@@ -1,3 +1,9 @@
+/* start variables */
+:root {
+  --section-padding: 100px;
+}
+/* end variables */
+
 /* start global rules */
 * {
   -webkit-box-sizing: border-box;
@@ -76,3 +82,37 @@ p {
   height: calc(100vh - 64px);
 }
 /* end landing section */
+
+/* start footer */
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  text-align: center;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer img {
+  margin-bottom: 20px;
+}
+
+.footer p:not(.copyright) {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.footer .social-icons i {
+  padding: 10px 15px;
+}
+
+.footer .copyright {
+  margin-top: 60px;
+}
+
+/* end footer */
