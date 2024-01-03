@@ -1,0 +1,141 @@
+/* start variables */
+:root {
+  --section-padding: 100px;
+}
+/* end variables */
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  cursor: none;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0,0%,100,0.5);
+}
+.cursor-dot,
+.cursor-outline {
+  position:fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+/* end global rules */
+
+header {
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .navbar {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  min-width: 200px;
+}
+
+header nav li {
+  display: inline-block;
+  font-size: 28px;
+}
+
+header nav li a {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: rgb(24, 52, 75);
+  transition: 2s;
+}
+
+header nav li a:hover {
+  padding-right: 100px;
+  background-color: aqua;
+}
+
+header .cart {
+  color: rgb(102, 102, 229);
+}
+
+h1 {
+  color: rgb(112, 199, 130);
+  text-align: center;
+
+  /* google fonts link with the html*/
+  font-family: "Nosifer", sans-serif;
+}
+p {
+  text-align: center;
+  color: aqua;
+}
+/* start landing section */
+.landing {
+  background-image: url(../images/15Z_2102.w026.n002.163B.p1.163.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+}
+/* end landing section */
+
+/* start footer */
+.footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  text-align: center;
+}
+
+.footer .container {
+  position: relative;
+}
+
+.footer img {
+  margin-bottom: 20px;
+}
+
+.footer p:not(.copyright) {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.footer .social-icons i {
+  padding: 10px 15px;
+}
+
+.footer .copyright {
+  margin-top: 60px;
+}
+
+/* end footer */
