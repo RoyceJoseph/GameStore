@@ -15,30 +15,8 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  cursor: none;
 }
 
-.cursor-dot {
-  width: 5px;
-  height: 5px;
-  background-color: white;
-}
-
-.cursor-outline {
-  width: 30px;
-  height: 30px;
-  border: 2px solid hsla(0,0%,100,0.5);
-}
-.cursor-dot,
-.cursor-outline {
-  position:fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  z-index: 1;
-  pointer-events: none;
-}
 /* end global rules */
 
 header {
@@ -100,7 +78,7 @@ p {
 }
 /* start landing section */
 .landing {
-  background-image: url(../images/15Z_2102.w026.n002.163B.p1.163.jpg);
+  background-image: url(/images/Pink\ &\ Blue\ Futuristic\ Gaming\ Channel\ Youtube\ Intro.mp4);
   background-size: cover;
   height: calc(100vh - 64px);
 }
@@ -139,3 +117,26 @@ p {
 }
 
 /* end footer */
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  video {
+    display: none;
+  }
+  #main {
+    background: url(/images/welcome.mp4);
+    background-size: cover;
+  }
+}
